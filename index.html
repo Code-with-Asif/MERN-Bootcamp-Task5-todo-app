@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="todo.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 contenteditable="" style="font-size: 25px;">TODO APP</h1>
+  </header>
+
+  <div class="app-wrapper">
+    <input type="text" id="user-input" placeholder="Create a new task" />
+
+    <div class="select-all-wrapper">
+      <input type="checkbox" name="select-all" id="select-all">
+      <label for="select-all">Mark All As Complete</label>
+    </div>
+    <div class="filters-wrapper">
+      <select name="filters-dropdown" id="filters-dropdown">
+        <option value="all">
+          All
+        </option>
+        <option value="completed">
+          Completed
+        </option>
+        <option value="pending">
+          Pending
+        </option>
+      </select>
+    </div>
+
+    <div class="tasks-list-wrapper">
+      <ul class="tasks-list">
+      </ul>
+    </div>
+  </div>
+  <div id="arrow"><i class="fa-solid fa-arrow-up fa-rotate-180"></i></div>
+  <!-- <button onclick="resetInterval()">Clear Interval</button> -->
+</body>
+
+</html>

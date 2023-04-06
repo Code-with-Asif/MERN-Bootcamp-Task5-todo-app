@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.app-wrapper {
+    width: 500px;
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.2);
+    max-height: 600px;
+    /* max-height: 500px; */
+    border-radius: 8px;
+    padding: 40px;
+    overflow-y: scroll;
+    
+
+}.app-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+#user-input {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+}
+
+ul.tasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.task-item {
+    padding: 24px 12px;
+    /* border: 1px solid rgba(0, 0, 0, 0.05); */
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.task-item:hover{
+    background-color: rgba(0, 0, 0, 0.025);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.075);
+}
+
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #4aa;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+
+.checkbox:hover {
+    background-color: #4aa;
+}
+
+.checkbox-filled {
+    background-color: #4aa;
+}
+
+
+.task-item span {
+    width: 70%;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.completed {
+    background-color: rgb(175, 250, 250);
+}
+
+
+.completed:hover{
+    background-color: rgb(175, 250, 250);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.075);
+}
+
+.select-all-wrapper {
+    padding: 12px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#select-all {
+    width: 20px;
+    height: 20px;
+}
+
+#filters-dropdown {
+    width: 240px;
+    padding: 8px;
+}
+
+/* .tasks-list-wrapper {
+    height: 350px;
+    overflow-y: auto;
+    padding: 16px 0;
+} */
+.deletebtn , .editbtn i{
+ width: 25px;
+}
+#arrow{
+    position: fixed;
+    position: relative;
+    bottom: 30px;
+    left: 16rem;
+   
+}
